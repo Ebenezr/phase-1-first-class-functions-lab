@@ -16,14 +16,10 @@ const createFareMultiplier = (int) => {
     }
     
 }
+const fareDoubler = createFareMultiplier(2);
 
-const fareDoubler = (fare ) => {
-    return createFareMultiplier(fare,int);
-   
-}
-const fareTripler =() =>{
-    return (createFareMultiplier(fare))*3
-}
-const selectDifferentDrivers = (drivers, FirstTwoDrivers, LastTwoDrivers) =>{
-    return returnFirstTwoDrivers(drivers)
+const fareTripler = createFareMultiplier(3);
+
+const selectDifferentDrivers = (drivers, FirstTwoDrivers) =>{
+    return FirstTwoDrivers(drivers)
 }
